@@ -19,7 +19,7 @@ public class MotionBlurModeSwitch : MonoBehaviour
 
     
     private int numModes = 0;
-    private int mode = 0;
+    private int mode = 1;
 
     public bool hideModeIdentity = true;
 

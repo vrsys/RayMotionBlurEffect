@@ -473,8 +473,16 @@ PrefabInstance:
       value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 6381083584284565460, guid: 466f98fe199af6e45a2e787ea29d1292, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381083584284565460, guid: 466f98fe199af6e45a2e787ea29d1292, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381083584284565462, guid: 466f98fe199af6e45a2e787ea29d1292, type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6381083584301848545, guid: 466f98fe199af6e45a2e787ea29d1292, type: 3}
       propertyPath: m_Name

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OculusSettings
   m_EditorClassIdentifier: 
   m_StereoRenderingModeDesktop: 1
-  m_StereoRenderingModeAndroid: 2
+  m_StereoRenderingModeAndroid: 0
   SharedDepthBuffer: 1
   DepthSubmission: 0
   DashSupport: 1
@@ -27,7 +27,10 @@ MonoBehaviour:
   LateLatchingDebug: 0
   EnableTrackingOriginStageMode: 0
   SpaceWarp: 0
-  TargetQuest: 1
   TargetQuest2: 1
   TargetQuestPro: 0
+  TargetQuest3: 1
+  TargetQuest3S: 0
   SystemSplashScreen: {fileID: 0}
+  UseStickControlThumbsticks: 0
+  OptimizeMultiviewRenderRegions: 0
