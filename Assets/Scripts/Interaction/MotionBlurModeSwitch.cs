@@ -73,10 +73,10 @@ public class MotionBlurModeSwitch : MonoBehaviour
             switch (mode)
             {
                 case 0:
-                    textDisplay.text = "Blur-Like Motion Effect OFF";
+                    textDisplay.text = "Motion Blur Effect\nOFF\n(Toggle with trigger)";
                     break;
                 case 1:
-                    textDisplay.text = "Blur-Like Motion Effect ON";
+                    textDisplay.text = "Motion Blur Effect\nON\n(Toggle with trigger)";
                     break;
                 default:
                     textDisplay.text = "Ray Off";
