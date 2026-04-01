@@ -291,7 +291,7 @@ MonoBehaviour:
   rayQuadGeometryGameObject: {fileID: 2143479114}
   activeRayProxyTrianglesMaterialOpacityFunction: {fileID: 2100000, guid: cc7d7d7bc878a5f44a0dbb49d12fa923, type: 2}
   writeExecutionTimeToFile: 0
-  createDebugGeometry: 1
+  createDebugGeometry: 0
   useRealTimeStamps: 0
   blurTransitionStartSpeedMSec: 0.5
   blurTransitionEndSpeedMSec: 9
@@ -301,6 +301,10 @@ MonoBehaviour:
   opacityFunctionFadeOutStart: 0.75
   speedBasedOpacityFadeMinSpeedMSec: 0.5
   speedBasedOpacityFadeMaxSpeedMSec: 9
+  debugPosChangePerInterval: 0
+  debugRotChangePerInterval: 2
+  debugPosStartShift: 0
+  debugRotStartShift: 20
   autoOn: 1
 --- !u!1 &227646018
 GameObject:
@@ -916,7 +920,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085623806}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ee32b4697ea4714284aea87520a1c63, type: 3}
   m_Name: 
@@ -1417,13 +1421,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410531488}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ee32b4697ea4714284aea87520a1c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPeriodSec: 1
-  zRotationAmplitudeDeg: 20
+  movementPeriodSec: 0.6
+  zRotationAmplitudeDeg: 30
   xTranslationAmplitudeM: -0.1
 --- !u!4 &1410531490
 Transform:
@@ -1629,7 +1633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1596809244
 Transform:
   m_ObjectHideFlags: 0

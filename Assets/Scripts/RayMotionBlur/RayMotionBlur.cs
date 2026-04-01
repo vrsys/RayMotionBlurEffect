@@ -108,6 +108,17 @@ public class RayMotionBlur : MonoBehaviour
     [Range(0, 10000)]
     private float speedBasedOpacityFadeMaxSpeedMSec = 9f;
 
+    [SerializeField]
+    private float debugPosChangePerInterval = 0.15f;
+    [SerializeField]
+    private float debugRotChangePerInterval = 0.10f;
+
+
+    [SerializeField]
+    private float debugPosStartShift = 0.15f;
+    [SerializeField]
+    private float debugRotStartShift = 0.10f;
+
 
     //private GameObject rayProxyAABBGameObject;
     private GameObject rayProxyTrianglesGameObject;
@@ -364,8 +375,8 @@ public class RayMotionBlur : MonoBehaviour
     {
         for (int t = 0; t <= NumTimeIntervalsForBlur; ++t)
         {
-            Vector3 posShift = new Vector3(0.15f * (t), 0f, 0f);    
-            Quaternion rotShift = Quaternion.Euler(0, 10 * t, 0);
+            Vector3 posShift = new Vector3(debugPosStartShift + debugPosChangePerInterval * (t), 0f, 0f);    
+            Quaternion rotShift = Quaternion.Euler(0, debugRotStartShift + debugRotChangePerInterval * t, 0);
 
             //Vector3 posShift = new Vector3(0f, 0f, 0f);
             //Quaternion rotShift = Quaternion.Euler(0, 0, 0);
